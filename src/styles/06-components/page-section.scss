@@ -1,0 +1,41 @@
+
+.page-section {
+    padding: $base-padding*2 $base-padding;
+    margin-bottom: $base-margin*2;
+    position: relative;
+
+    &:before,
+	&:after {
+		content: '';
+		background-color: $page-bg-color;
+		height: 16px;
+		width: 200px;
+		position: absolute;
+        bottom: 0;
+        border-top: 1px solid #aaa;
+	}
+	&:before {
+		transform: skew(50deg);
+        left: calc(50% - 210px);
+        border-right: 1px solid #aaa;
+	}
+	&:after {
+		transform: skew(-50deg);
+        right: calc(50% - 210px);
+        border-left: 1px solid #aaa;
+    }
+    
+    &__inner {
+        padding-bottom: 16px;
+    }
+
+    &:last-child {
+        &:before,
+        &:after {
+            display: none;
+        }
+        &__inner {
+            padding-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{{#> base }}
+<header>
+    {{> hello-banner }}
+</header>
+<main class="container">
+    <section class="page-section section section--about">
+        <div class="page-section__inner u-text-center">
+            <h1 class="section-heading section-heading--main">About</h1>
+            <p>Expert in client-side development, responsive design, accessibility and web standards.</p>
+            <p>I have been working on the web since 2005 building web based applications for clients over a broad range
+                of industry sectors. In addition to my experience with HTML, CSS and JavaScript I have a sound knowledge
+                of object oriented back-end technologies and have extensive experience working with Umbraco CMS.</p>
+            <div class="u-text-center">
+                <a class="btn js-mailto u-gamma" href="#" data-mailto-domain="sean-jones.co.uk" data-mailto-user="web">Get in touch</a>
+            </div>
+        </div>
+    </section>
+    <section class="page-section section section--coreskills">
+        <div class="page-section__inner">
+            <h2 class="section-heading section-heading--main u-text-center">Core skills</h2>
+            <div class="coreskills">
+                <div class="coreskills__block">
+                    <h4 class="coreskills__block-title">Development</h4>
+                    <ul>
+                        {{#each htmlWebpackPlugin.options.data.homepage.skills.development }}
+                        <li>{{ this }}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="coreskills__block">
+                    <h4 class="coreskills__block-title">Tools</h4>
+                    <ul>
+                        {{#each htmlWebpackPlugin.options.data.homepage.skills.tools }}
+                        <li>{{ this }}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <div class="u-text-center">
+                <a class="btn u-gamma" href="/cv">View my CV</a>
+            </div>
+        </div>
+    </section>
+</main>
+{{/ base }}

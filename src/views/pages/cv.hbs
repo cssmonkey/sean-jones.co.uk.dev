@@ -1,0 +1,72 @@
+{{#> base }}
+    <header>
+        <div class="header-content group">
+            <div class="page-heading">
+                    <h1 class="main-title">Sean Jones</h1>
+                    <h2 class="sub-title">Front End Developer</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-section section">
+            <div class="page-section__inner">
+                <h3 class="section-heading section-heading--main">Profile</h3>
+                <p>I’m an experienced and motivated Front End developer looking for new opportunities within the development industry. I have expert knowledge of Front End development with a focus on responsive design, accessibility and web standards. </p>
+                <p>Working on the web since 2005, I have built web based applications for clients over a broad range of industry sectors. In addition to my experience with HTML5, CSS3 and JavaScript I have a sound knowledge of object oriented back-end technologies and considerable experience working with Umbraco CMS. More recently I have been primarily working with the JavaScript MVC frameworks, Ember.js and React/Redux.</p>
+                <p>Some of the clients I’ve worked with include AXA, Clydesdale Bank, Macallan Whisky and Prudential Assurance.</p>
+            </div>
+        </section>
+        <section class="page-section section section--coreskills">
+            <div class="page-section__inner">
+                <h3 class="section-heading section-heading--main">Core skills</h3>
+                <p>I have extensive experience writing cross-browser HTML, CSS in accordance to W3C standards and have a strong understanding of WCAG 2.0 and Front End best practices.</p>
+                <p>I build solid user interfaces using progressive enhancement and strive for the best possible user experiences cross-platform. </p>
+                                
+                <div class="coreskills">
+                    <div class="coreskills__block">
+                        <h4 class="coreskills__block-title">Technologies I work with most:</h4>
+                        <ul>
+                            {{#each htmlWebpackPlugin.options.data.cv.skills }}
+                                <li>{{ this }}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section section section--workhistory">
+            <div class="page-section__inner">
+                <h3 class="section-heading section-heading--main">Work History</h3>
+                {{#each htmlWebpackPlugin.options.data.cv.workHistory }}
+                    <div class="work-item">
+                            <h4 class="work-item__title">{{ title }}</h4>
+                            <p class="work-item__meta">
+                                <span class="work-item__date">{{ date }}</span>
+                            </p>
+                            <div class="work-item__details">
+                                {{{ details }}}
+                            </div> 
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </section>
+        <section class="page-section section section--education">
+            <div class="page-section__inner">
+                <h3 class="section-heading section-heading--main">Education &amp; Certifications</h3>
+                {{#each htmlWebpackPlugin.options.data.cv.education }}
+                    <div class="education-item">
+                            <h4 class="education-item__title">{{ title }}</h4>
+                            <p class="education-item__meta">
+                                <span class="education-item__date">{{ date }}</span>
+                            </p>
+                            <div class="education-item__details">
+                                {{{ details }}}
+                            </div> 
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </section>
+    </main>
+{{/ base }}

@@ -1,0 +1,35 @@
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+@import './03-generic/normalize';
+
+// settings
+@import './01-settings/typography';
+@import './01-settings/spacing';
+@import './01-settings/colors';
+
+//tools
+@import './02-tools/colors';
+@import './02-tools/spacing';
+@import './02-tools/font-sizing';
+@import './02-tools/alignment';
+@import './02-tools/typography';
+
+// generic
+
+// elements
+@import './04-elements/elements';
+
+// layouts
+@import './05-layout/grid';
+
+// components
+@import './06-components/masthead';
+@import './06-components/availability-label';
+@import './06-components/page-section';
+
+
+.dark {
+    background: #29292c;
+    color: #b5b5c0;
+    border: 1px solid #494a51; 
+}

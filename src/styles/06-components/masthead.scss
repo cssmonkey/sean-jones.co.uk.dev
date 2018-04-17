@@ -1,0 +1,121 @@
+
+// .masthead {
+// 	background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/white_carbon.png");
+// 	position: relative;
+// 	overflow: hidden;
+// 	height: 80vh;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	&:before {
+// 		content: '';
+// 		background-color: rgba(127, 219,255, 0.65);
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		width: 100%;
+// 		height: 100%;
+// 	}
+// 	&__text {
+// 		margin: 0 auto;
+// 		padding: 4em;
+// 		position: relative;
+//   }
+//   &__main {
+//     font-size: 3.8rem;
+// 		font-weight: 700;
+// 		font-family: $fontRoboSlab;
+// 		margin: 0;
+//   }
+//   &__secondary {
+//     font-size: 1.8rem;
+// 		font-weight: 700;
+// 		font-family: $fontRoboSlab;
+//     line-height: 1.4;
+//     padding: 2px 0;
+//     margin:0;
+//   }
+// }
+
+.masthead {
+	position: relative;
+	min-height: calc(60vh + 16px);
+	animation: backgroundChange 1.5s;
+	display: flex;
+	align-items: center;
+	background-color: #404145;
+	background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%231d1f24' fill-opacity='0.35' fill-rule='evenodd'/%3E%3C/svg%3E");
+	background-attachment: fixed;
+	border-top: 6px solid #000;
+	text-align: center;
+	&:before,
+	&:after {
+		content: '';
+		background-color: $page-bg-color;
+		height: 16px;
+		width: 150%;
+		position: absolute;
+		bottom: 0;
+	}
+	&:before {
+		transform: skew(50deg);
+		left: calc(-100% - 8px);
+	}
+	&:after {
+		transform: skew(-50deg);
+		right: calc(-100% - 8px);
+	}
+	&__copy {
+		flex: 1;
+		max-width: 1024px;
+		margin: 0 auto;
+		h1,p {
+			padding: 0;
+			color: #FFF;
+			font-family: $fontRoboSlab;
+			font-weight: 700; 
+			text-shadow: 2px 2px 2px #000;
+		}
+		h1 {
+			margin: 0;
+			font-size: 4rem;
+			animation-delay: 0.5s;
+			animation: slideDownText 1.5s;
+		}
+		p {
+			margin: 0;
+			font-size: 2.2rem;
+			animation-delay: 0.75s;
+			animation: slideInText 1.5s;
+		}
+	}
+}
+
+@keyframes backgroundChange {
+	0%   {
+		background-color: #EBEBEB;
+	}
+	100% {
+		background-color: #404145;
+	}
+}
+
+@keyframes slideInText {
+	0%   { 
+		opacity: 0;
+		transform: translateX(-5%); }
+	100% { 
+		opacity: 1;
+		transform: translateX(0); 
+	}
+}
+@keyframes slideDownText {
+	0%   { 
+		opacity: 0;
+		transform: translateY(-30%); }
+	100% { 
+		opacity: 1;
+		transform: translateY(0); 
+	}
+}
+

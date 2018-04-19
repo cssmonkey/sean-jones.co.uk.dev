@@ -1,6 +1,6 @@
 .availability-label {
-    @extend .u-black;
-    @extend .u-bg-yellow;
+    color: $color-black;
+    background-color: get-color(yellow);
     border-radius: 4px;
     padding: $base-padding ($base-padding*2);
     font-size: 1.2rem;

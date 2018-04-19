@@ -4,7 +4,7 @@ module.exports = {
         secondary: 'I\'m a Front end Developer based in Glasgow, Scotland'
     },
     homepage: {
-        availableFrom: 'May 2018',
+        availableFrom: 'August 2018',
         skills: {
             development: ['Accessibility', 'CSS', 'JavaScript', 'Progressive Enhancement', 'Responsive Design', 'Test Driven Development'],
             tools: ['Babel', 'GIT', 'Gulp', 'Mocha', 'NodeJS', 'React', 'Redux', 'SASS', 'jQuery', 'Webpack' ]

@@ -1,46 +1,7 @@
 
-// .masthead {
-// 	background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/white_carbon.png");
-// 	position: relative;
-// 	overflow: hidden;
-// 	height: 80vh;
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: center;
-// 	&:before {
-// 		content: '';
-// 		background-color: rgba(127, 219,255, 0.65);
-// 		position: absolute;
-// 		top: 0;
-// 		left: 0;
-// 		width: 100%;
-// 		height: 100%;
-// 	}
-// 	&__text {
-// 		margin: 0 auto;
-// 		padding: 4em;
-// 		position: relative;
-//   }
-//   &__main {
-//     font-size: 3.8rem;
-// 		font-weight: 700;
-// 		font-family: $fontRoboSlab;
-// 		margin: 0;
-//   }
-//   &__secondary {
-//     font-size: 1.8rem;
-// 		font-weight: 700;
-// 		font-family: $fontRoboSlab;
-//     line-height: 1.4;
-//     padding: 2px 0;
-//     margin:0;
-//   }
-// }
-
 .masthead {
 	position: relative;
 	min-height: calc(60vh + 16px);
-	animation: backgroundChange 1.5s;
 	display: flex;
 	align-items: center;
 	background-color: #404145;
@@ -71,7 +32,7 @@
 		margin: 0 auto;
 		h1,p {
 			padding: 0;
-			color: #FFF;
+			color: get-color(white);
 			font-family: $fontRoboSlab;
 			font-weight: 700; 
 			text-shadow: 2px 2px 2px #000;
@@ -88,15 +49,6 @@
 			animation-delay: 0.75s;
 			animation: slideInText 1.5s;
 		}
-	}
-}
-
-@keyframes backgroundChange {
-	0%   {
-		background-color: #EBEBEB;
-	}
-	100% {
-		background-color: #404145;
 	}
 }
 

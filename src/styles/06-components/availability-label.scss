@@ -1,11 +1,9 @@
 .availability-label {
-    color: $color-black;
-    background-color: get-color(yellow);
-    border-radius: 4px;
+    color: get-color(yellow);
     padding: $base-padding ($base-padding*2);
     font-size: 1.2rem;
     font-family: $fontRoboSlab;
-    font-weight: 700; 
+    font-weight: 300; 
     display: inline-block; 
-    margin: ($base-margin*4) auto 0;
+    margin: 0 auto;
 }

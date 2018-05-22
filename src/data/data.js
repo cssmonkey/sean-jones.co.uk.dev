@@ -1,3 +1,6 @@
+const colors = ['navy','blue','purple','maroon','black'];
+const colorsLength = colors.length;
+
 module.exports = {
     helloBanner: {
         main: 'Hello, my name is Sean Jones',
@@ -6,8 +9,78 @@ module.exports = {
     homepage: {
         availableFrom: 'August 2018',
         skills: {
-            development: ['Accessibility', 'CSS', 'JavaScript', 'Progressive Enhancement', 'Responsive Design', 'Test Driven Development'],
-            tools: ['Babel', 'GIT', 'Gulp', 'Mocha', 'NodeJS', 'React', 'Redux', 'SASS', 'jQuery', 'Webpack' ]
+            development: [
+                { 
+                    text: 'Accessibility',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white'
+                }, 
+                { 
+                    text: 'CSS',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white'
+                }, 
+                { 
+                    text: 'JavaScript',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white'
+                },
+                { 
+                    text: 'Progressive Enhancement',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }, 
+                { 
+                    text: 'Responsive Design',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }, 
+                { 
+                    text: 'Test Driven Development',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white'
+                }
+            ],
+            tools: [
+                { 
+                    text: 'Babel',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }, 
+                { 
+                    text: 'GIT',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }, 
+                { 
+                    text: 'Gulp',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }, 
+                { 
+                    text: 'Mocha',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }, 
+                { 
+                    text: 'NodeJS',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }, 
+                { 
+                    text: 'React',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }, 
+                { 
+                    text: 'Redux',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }, 
+                { 
+                    text: 'SASS',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }, 
+                { 
+                    text: 'jQuery',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white'
+                }, 
+                { 
+                    text: 'Webpack',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }, 
+                { 
+                    text: 'patternlab',
+                    color: 'u-bg-' + colors[Math.floor(Math.random()*colorsLength)] + '-text-white' 
+                }
+            ]
         }
     },
     cv: {

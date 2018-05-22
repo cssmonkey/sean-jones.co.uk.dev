@@ -6,6 +6,7 @@ $fa-font-path: "~font-awesome/fonts";
 @import './01-settings/typography';
 @import './01-settings/spacing';
 @import './01-settings/colors';
+@import './01-settings/breakpoints';
 
 //tools
 @import './02-tools/colors';
@@ -13,6 +14,7 @@ $fa-font-path: "~font-awesome/fonts";
 @import './02-tools/font-sizing';
 @import './02-tools/alignment';
 @import './02-tools/typography';
+@import './02-tools/breakpoints';
 
 // generic
 
@@ -24,12 +26,9 @@ $fa-font-path: "~font-awesome/fonts";
 
 // components
 @import './06-components/masthead';
+@import './06-components/footer';
 @import './06-components/availability-label';
 @import './06-components/page-section';
+@import './06-components/button';
+@import './06-components/coreskills';
 
-
-.dark {
-    background: #29292c;
-    color: #b5b5c0;
-    border: 1px solid #494a51; 
-}

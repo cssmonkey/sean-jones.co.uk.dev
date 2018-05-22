@@ -55,3 +55,11 @@
     stroke: $value;
   }
 };
+
+@each $key, $value in $darkColors {
+  .u-bg-#{$key}-text-white {
+    background-color: $value!important;
+    color: get-color(white)!important;
+  }
+};
+

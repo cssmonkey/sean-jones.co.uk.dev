@@ -9,10 +9,11 @@
 	background-attachment: fixed;
 	border-top: 6px solid #000;
 	text-align: center;
+	overflow: hidden;
 	&:before,
 	&:after {
 		content: '';
-		background-color: $page-bg-color;
+		background-color: get-color(silver);;
 		height: 16px;
 		width: 150%;
 		position: absolute;
@@ -30,6 +31,7 @@
 		flex: 1;
 		max-width: 1024px;
 		margin: 0 auto;
+		padding-bottom: 46px;
 		h1,p {
 			padding: 0;
 			color: get-color(white);
@@ -38,16 +40,25 @@
 			text-shadow: 2px 2px 2px #000;
 		}
 		h1 {
-			margin: 0;
-			font-size: 4rem;
-			animation-delay: 0.5s;
-			animation: slideDownText 1.5s;
+			margin: .4em 0 .6em;
+			font-size: 3rem;
 		}
 		p {
 			margin: 0;
-			font-size: 2.2rem;
-			animation-delay: 0.75s;
-			animation: slideInText 1.5s;
+			font-size: 2rem;
+		}
+		@include breakpoint('medium') {
+			h1 {
+				margin: 0;
+				font-size: 4rem;
+				animation-delay: 0.5s;
+				animation: slideDownText 1.5s;
+			}
+			p {
+				font-size: 2.2rem;
+				animation-delay: 0.75s;
+				animation: slideInText 1.5s;
+			}
 		}
 	}
 }

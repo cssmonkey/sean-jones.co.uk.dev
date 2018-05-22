@@ -1,5 +1,5 @@
 import 'styles/app.scss';
 
-import 'js/modules/test-component';
+import mailto from 'js/modules/mailto';
 
-console.log('page loaded');
+mailto();

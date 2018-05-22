@@ -17,9 +17,17 @@ $colors: (
     black: #111
 );
 
+$darkColors: (
+    navy: #001F3F,
+    blue: #0074D9,
+    purple: #B10DC9,
+    maroon: #85144B,
+    black: #111
+);
+
 @function get-color($color) {
     @return map-get($colors, $color );
 }
 
-$page-bg-color: #EBEBEB;
+$page-bg-color: #fff;
 $color-black: get-color(black);

@@ -5,12 +5,7 @@ var webpack = require('webpack'),
     path = require('path'),
     srcPath = path.join(__dirname, '/src'),
     distPath = path.join(__dirname, '/dist'),
-    pagesConfig = [
-        {
-            name: 'home',
-            title: 'This is the page title'
-        }
-    ];
+    pagesConfig = require('./pages.config');
 
 const pluginsBaseConfig = [
     new webpack.DefinePlugin({

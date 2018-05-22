@@ -1,6 +1,21 @@
 .u-margin {
     margin: $base-margin;
 }
+.u-margin-top {
+    margin-top: $base-margin;
+}
+.u-margin-topx2 {
+    margin-top: $base-margin*2;
+}
+.u-margin-bottom {
+    margin-bottom: $base-margin;
+}
 .u-padding {
     padding: $base-padding;
+}
+.u-padding-top {
+    padding-top: $base-padding;
+}
+.u-padding-bottom {
+    padding-bottom: $base-padding;
 }

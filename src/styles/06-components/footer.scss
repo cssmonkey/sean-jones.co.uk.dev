@@ -1,0 +1,29 @@
+.footer {
+    background-color: get-color(black);
+    padding-bottom: $base-padding;
+}
+
+.footer-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    a {
+        display: block;
+        padding: $base-padding;
+        text-decoration: none;
+        color: darken(get-color(white), 20%);
+        border: 1px solid transparent;
+        &:hover,
+        &:focus {
+            color: get-color(white);
+            border-bottom-color: get-color(white);
+        }
+    }
+}
